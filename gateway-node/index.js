@@ -14,5 +14,5 @@ app.use('/api', createProxyMiddleware({
 }));
 
 app.listen(3000, '0.0.0.0',() => {
-  console.log('Gateway running at http://localhost:3000');
+  console.log('Gateway running at http://localhost:3000 k');
 });
