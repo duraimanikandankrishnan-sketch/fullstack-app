@@ -8,7 +8,7 @@ app.use(cors());
 
 // Proxy to Spring Boot
 app.use('/api', createProxyMiddleware({
-  target: 'http://backend:8080', // Spring Boot port
+  target: 'http://springboot-service:8080', // Spring Boot port
   changeOrigin: true,
   pathRewrite: { '^/api': '' }
 }));

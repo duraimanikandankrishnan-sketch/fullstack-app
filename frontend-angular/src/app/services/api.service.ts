@@ -8,6 +8,6 @@ import { Observable } from 'rxjs';
 export class ApiService {
   constructor(private http: HttpClient) {}
   getData(): Observable<any> {
-    return this.http.get('http://localhost:3000/api/data');
+    return this.http.get('http://myapp.local/api/data');
   }
 }
